@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section3</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-size: 5vh;
+        color: white;
+      }
+      body,
+      html {
+        height: 100%;
+        border: 3px solid white;
+      }
+      .parent{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .sidebar {
+        display: inline-block;
+        width: 15%;
+        height: 100%;
+        border: 2px solid black;
+        background-color: #111111;
+      }
+      .rem-body {
+        display: inline-block;
+        border: 2px solid black;
+        width: 84%;
+        height: 100%;
+        background-color: #39cccc;
+      }
+      .txt {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid pink;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="sidebar">
+        <div class="txt">Sidebar</div>
+      </div>
+      <div class="rem-body">
+        <div class="txt">Body</div>
+      </div>
+    </div>
+  </body>
+</html>
