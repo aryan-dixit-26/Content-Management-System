@@ -9,10 +9,19 @@
       src="https://kit.fontawesome.com/f55e4fb125.js"
       crossorigin="anonymous"
     ></script>
-    <title>Content Management System </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Content Management System</title>
   </head>
   <body>
+
     <div class="parent">
+
+      
       <aside id="sidebar">
         <ul>
           <li>
@@ -52,13 +61,13 @@
             </a>
           </li>
           <li>
-            <a>
+            <a id="login-btn" href="#login-frame">
               <i class="fa fa-user"></i>
               <span> Login </span>
             </a>
           </li>
           <li>
-            <a>
+            <a id="signup-btn" href="#signup-frame">
               <i class="fa fa-user-plus"></i>
               <span> SignUp </span>
             </a>
@@ -69,6 +78,9 @@
               <span> Collapse </span>
             </button>
           </li>
+
+
+          
         </ul>
       </aside>
 
@@ -103,8 +115,10 @@
           frameborder="0"
           id="section-frame"
         ></iframe>
+        <iframe src="login.html" frameborder="0" id="login-frame"></iframe>
+        <iframe src="signup.html" frameborder="0" id="signup-frame"></iframe>
       </div>
-      <!-- <script src="app.js"></script> -->
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

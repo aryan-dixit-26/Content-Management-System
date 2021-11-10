@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive;
 }
 html{
     height: 100%;
@@ -31,15 +32,46 @@ body{
     border-radius: 25px;
 }
 
+#expand{
+    position: absolute ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 10vh;
+    background-color: #001f3f;
+    border-radius: 25px;
+    left: 22%;
+    top: 1.5%;
+    opacity: 1;
+
+}
 #add-project-btn:hover{
     cursor: pointer;
 }
 #add-project:hover{
     cursor: pointer;
 }
+#expand:hover{
+    cursor: pointer;
+}
+#expand button:hover{
+    cursor: pointer;
+}
 
 
 #add-project button{
+    border: none;
+    width: 75%;
+    height: 75%;
+    color: whitesmoke;
+    font-size: 24px;
+    border-radius: 25px;
+    background-color: #001f3f;
+}
+
+#expand button{
     border: none;
     width: 75%;
     height: 75%;

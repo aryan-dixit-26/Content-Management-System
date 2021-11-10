@@ -1,24 +1,16 @@
-// const homeBtn = document.getElementById('home-btn');
-// const pageBtn = document.getElementById('page-btn');
-// const homeFrame = document.getElementById('home-frame');
-// const pageFrame = document.getElementById('page-frame');
-// let flagHome = 0;
-// let flagPage = 0;
-// homeBtn.addEventListener("click", function(){
-//     if(flagHome === 0){
-//         homeFrame.style.opacity = "1";
-//         flagHome = 1;
-//     }else{
-//         homeFrame.style.opacity = "0";
-//         flagHome = 0;
-//     }
-// })
-// pageBtn.addEventListener("click", function(){
-//     if(flagPage === 0){
-//         pageFrame.style.opacity = "1";
-//         flagPage = 1;
-//     }else{
-//         pageFrame.style.opacity = "0";
-//         flagPage = 0;
-//     }
-// })
+const collapseBtn = document.getElementById("collapse-btn")
+const sideBar = document.getElementById("sidebar")
+const mainBody = document.getElementById("main-body")
+const parent = document.getElementById("parent")
+let flag = 0
+collapseBtn.addEventListener("click", function(){
+    
+    sideBar.style.left="-14%"
+    sideBar.style.transition="left .5s"
+    mainBody.style.width="100%"
+    mainBody.style.transition=".5s"
+    mainBody.style.left="0%"
+    parent.innerHtml=``
+
+})
+

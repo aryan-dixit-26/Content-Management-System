@@ -1,12 +1,9 @@
-/*Media Query Points
-905px - manage the side bar: Infact change the sideBar to a hamburger Icon 
-After creating the whole layout : Create the collapse button feature also
-*/
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Baloo Da 2', cursive;
 }
 
 .parent {
@@ -14,16 +11,15 @@ After creating the whole layout : Create the collapse button feature also
   height: 100vh;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 aside {
-  /* display: none; */
+  left: 0%;
   border: 2px solid black;
   width: 14%;
   height: 100vh;
   position: fixed;
-  /* text-align: center; */
   background-color: #001f3f;
   color: rgb(235, 214, 214);
   overflow: hidden;
@@ -78,8 +74,6 @@ li button:hover{
 }
 
 iframe{
-  /* position: absolute; */
-  /* opacity: 0; */
   width: 100%;
   height: 100%;
 }
@@ -94,4 +88,44 @@ button i{
 span{
   text-align: start;
   width: 70%;
+}
+
+@keyframes sidebarChange{
+  0%{
+    left: -5%;
+  }
+
+  33%{
+    left: -10%;
+  }
+
+  66%{
+    left: -15%;
+  }
+
+  99%{
+    left: -20%;
+  }
+}
+
+@keyframes sidebarReturn{
+  0%{
+    left: 5%;
+  }
+
+  25%{
+    left: 10%;
+  }
+
+  50%{
+    left: 15%;
+  }
+
+  100%{
+    left: 20%;
+  }
+}
+
+#collapse-btn{
+  transition: .5s;
 }

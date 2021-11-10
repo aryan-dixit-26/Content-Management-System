@@ -19,6 +19,7 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        font-family: 'Baloo Da 2', cursive;
       }
 
       body,
@@ -40,7 +41,7 @@
         align-items: center;
         flex-direction: column;
         width: 30%;
-        height: 60%;
+        min-height: 60%;
         border-radius: 3vh;
         background: linear-gradient(#aaaaaa, #ffffff);
         box-shadow: 5px 10px #111111;
@@ -87,7 +88,7 @@
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        min-height: 20%;
+        height: 20%;
         flex-wrap: wrap;
       }
     </style>
@@ -95,10 +96,12 @@
   </head>
   <body>
     <div class="login-container">
-      <h2>LOGIN</h2>
-      <label for="name">Name:</label>
+      <h2>SIGN UP</h2>
+      <label for="name">Enter Name:</label>
       <input type="text" placeholder="Enter Your Name" />
-      <label for="Password">Password:</label>
+      <label for="Password">Enter Password:</label>
+      <input type="password" placeholder="Enter Your Password" />
+      <label for="Password">Confirm Password:</label>
       <input type="password" placeholder="Enter Your Password" />
       <button id="submit-btn">Submit</button>
       <hr />

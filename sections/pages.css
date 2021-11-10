@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive;
 }
 
 html{
@@ -33,10 +34,10 @@ body{
 }
 
 #header{
-    font-size: 50px;
+    font-size: 4vh;
     color:#001f3f;
     font-weight: bold;
-    top: 10px;
+    top: 10vh;
     
 }
 
@@ -47,7 +48,7 @@ body{
     align-items: center;
     flex-direction: column;
     border: 10px solid #001f3f;
-    width: 20%;
+    min-width: 20%;
     height: 40vh;
     margin: 5px;
     border-radius: 50%;
@@ -55,7 +56,7 @@ body{
 }
 
 .items h6{
-    padding: 5px;
+    padding: 2vh;
     font-size: 20px;
     color:#001f3f;
 }
