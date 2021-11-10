@@ -129,3 +129,23 @@ span{
 #collapse-btn{
   transition: .5s;
 }
+
+#expand{
+  position: fixed;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  bottom: 20px;
+  left: 20px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 50%;
+  transition: 200ms;
+  cursor: pointer;
+}
+#expand:hover{
+  background-color: blueviolet;
+}
